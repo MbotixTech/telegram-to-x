@@ -1,5 +1,5 @@
 {
-  "name": "muse-autopost",
+  "name": "telegram-to-x",
   "version": "1.0.0",
   "description": "Automated Telegram to Twitter posting with watermarking and AI-powered captions",
   "main": "index.js",
