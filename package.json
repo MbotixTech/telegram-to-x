@@ -1,0 +1,37 @@
+{
+  "name": "muse-autopost",
+  "version": "1.0.0",
+  "description": "Automated Telegram to Twitter posting with watermarking and AI-powered captions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prod": "NODE_ENV=production HEADLESS=true node index.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop muse-autopost",
+    "pm2:restart": "pm2 restart muse-autopost",
+    "pm2:logs": "pm2 logs muse-autopost"
+  },
+  "keywords": [
+    "telegram",
+    "twitter",
+    "automation",
+    "watermark",
+    "ai"
+  ],
+  "author": "MuseOfCurves",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "puppeteer": "^21.5.2",
+    "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
